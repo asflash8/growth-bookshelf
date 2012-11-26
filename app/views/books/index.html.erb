@@ -1,13 +1,9 @@
 <h1>Listing books</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Title</th>
     <th>Publisher</th>
-    <th>Price</th>
-    <th>Author</th>
-    <th>Published</th>
-    <th>Description</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,10 +13,6 @@
   <tr>
     <td><%= book.title %></td>
     <td><%= book.publisher %></td>
-    <td><%= book.price %></td>
-    <td><%= book.author %></td>
-    <td><%= book.published %></td>
-    <td><%= book.description %></td>
     <td><%= link_to 'Show', book %></td>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
