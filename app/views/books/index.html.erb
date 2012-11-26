@@ -4,6 +4,7 @@
   <tr>
     <th>Title</th>
     <th>Publisher</th>
+    <th>Amazon</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= book.title %></td>
     <td><%= book.publisher %></td>
+    <td><%= link_to 'Amazon', make_amazon_url(book.isbn10) %></td>
     <td><%= link_to 'Show', book %></td>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
